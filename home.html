@@ -11,7 +11,7 @@
     <title>Responsive Redesign</title>
   </head>
 
-  <body>
+  <body class="ml-md-5 mr-md-5 mb-md-5">
     <!-- TODO: put your HTML code here! -->
     <!-- nav bar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -19,55 +19,85 @@
 	<a class="navbar-brand font-weight-bold" href="#">Home</a>
 	<div class="collapse navbar-collapse">
 	  <ul class="nav navbar-nav ml-auto">
-	    <li class="nav-item font-weight-bold"><a href="#section-one" style="color: var(--bg-color-one);" class="nav-link">One</a></li>
-	    <li class="nav-item font-weight-bold"><a href="#section-two" style="color: var(--bg-color-two);" class="nav-link">Two</a></li>
-	    <li class="nav-item font-weight-bold"><a href="#section-three" style="color: var(--bg-color-three);" class="nav-link">Three</a></li>
-	    <li class="nav-item font-weight-bold"><a href="#section-four" style="color: var(--bg-color-four);" class="nav-link">Four</a></li>
+	    <li class="nav-item font-weight-bold"><a href="#section-one" style="color: var(--bg-color-one);" class="nav-link">Usability Problems</a></li>
+	    <li class="nav-item font-weight-bold"><a href="#section-two" style="color: var(--bg-color-two);" class="nav-link">Visual Redesign</a></li>
+	    <li class="nav-item font-weight-bold"><a href="#section-three" style="color: var(--bg-color-three);" class="nav-link">Responsive Redesign</a></li>
+	    <!-- <li class="nav-item font-weight-bold"><a href="#section-four" style="color: var(--bg-color-four);" class="nav-link">Conclusion</a></li> -->
 	  </ul>
 	</div>	
       </div>
     </nav>
 
-    <div id="intro" class="container-fluid text-center">
-      <img src="" alt="" style="width: 30%;">
-      <h2>jdlkfjsf </h2>
-      <h2>djfljs dklsjfsd l djslfj sd</h2>
+    <div id="intro" class="text-center">
+      <img src="./img/responsive-redesign-logo-hi.png" alt="Responsive Redesign Logo" style="width: 100%; box-shadow: 0 0 0 0;">
     </div>
 
-    <div id="section-one" class="d-flex flex-column text-center justify-content-center align-items-center">
-      <div>
-	<h1>dslfjld lksjdfl lks jdlkf </h1>
-      </div>
-    
+    <div id="section-one" class="d-flex flex-column text-center justify-content-around align-items-around">
+      <h1>Identifying Usability Problems</h1>
       <div class="d-flex flex-row justify-content-around align-items-center flex-wrap">
-	
+	<img src="./img/simplewash-screencapture.png" alt="A screencapture of the homepage of simplewash.us" style="height: 100rem; max-width: 90%">
+	<!-- <p style="text-left">The website I picked was simplewash.us.</p> -->
+	<p class="text-left" style="max-width: 50%;">In this part, you will be picking a one page of a website to analyze based on usability and accessibility standards. You will then redesign and build the redesigned version of this webpage.
+Picking a Website
+Pick a webpage that is publicly accessible without creating an account. Brown-specific sites like Banner and ASK are NOT publicly accessible. We recommend avoiding mass consumer websites with dedicated UI/UX designer(s), like Facebook or Twitter. Instead, choose an easier interface to improve, like websites for a local hospital, network router support, a custom-made restaurant ordering site, local government service, etc. Feel free to check your chosen interface with a TA. After you choose an interface to redesign, take a screenshot and link to it.
+Finding Problems
+Analyze the usability of the website using the criteria we learned about in class: usability, learnability, and memorability. Write about these problems, in the form of a list, table, infographic, or bullet points (depending on how you would like to present it in your portfolio!). It might be helpful to refer back to the Visual Design and Layout lectures.
+Accessibility
+In addition to analyzing the website on the four usability guidelines, use WebAIM WAVE to detect any possible accessibility concerns. Use a screen-reader to test how the website is interpreted by screen-readers. Write a few sentences about your findings.</p>
       </div>
       
     </div>
 
     <div id="section-two" class="d-flex flex-column justify-content-center align-items-center">
-      <h1>djflkjsd dlskjfldsj f dlksfjsdl;</h1>
-      <h2>dfldsjflksjdl kmln ospo jkdmsljf  lsjld nl oshflk  lsdhfl sl</h2>
+      <h1>Visual Redesign</h1>
+      <p>Keep in mind that the screen needs to be responsive - that is, a different layout for mobile, tablet, and desktop. We recommend you split up the page into different grids and containers, so that you can easily use flexbox or grids for simple responsive development.</p>
+      
       <div class="text-center">
+	<h2>Low-fidelity Wireframing</h2>
+	<p>Using a low-fidelity prototyping software (Balsamiq or Invision), create a total of 3 wireframes of your screen, one for each of the screen sizes (mobile, tablet, desktop). You will be submitting annotated wireframes in your handin. Annotations can simply be labels pointed to where they apply, but just make sure they are visually distinct so they aren't confused for part of the prototype itself. For each wireframe, consider the problems you described in part 1. Annotate where your wireframe solves those problems and describe how.</p>
+      </div>
+      
+      <div class="text-center">
+	<h2>High-Fidelity Prototyping</h2>
+	<p>Using a high-fidelity prototyping software (Figma or AdobeXD), create a total of 3 high-fidelity prototypes of your screen, one for each of the screen sizes (mobile, tablet, desktop). These should be based on the low-fidelity wireframes you created. 
+
+For each prototype, annotate the different elements so that an engineer would be able to take your designs and reproduce them without needing additional explanation. Annotate how your website would be responsive to handle the different screen sizes. Is it clear how the styling and/or structuring of each element  will change when you move from desktop to mobile to tablet? Here are some example questions to consider annotating:
+For larger containers, will you be using flexbox, grid, or something else? Why?
+Does the page change because of a user-action (such as a click or a hover)? How?
+	</p>
+      </div>
+      
+      <div class="text-center">
+	<h2>Visual Design Style Guide</h2>
+	<p>For any elements that change on events (e.g., on hover, on click), keeping their interactions consistent throughout a product keeps the user experience coherent. Clear documentation also makes handoffs to developers easier. Here is an example. Create a visual design style guide that displays the main colors, typography, and reusable components’ different states (buttons on hover, click, etc.). We expect to see all major components included in your style guide, but how many components this totals to will vary based on your design choices. Focus on interactive elements like input fields over colors and fonts. 
+	</p>
       </div>	
     </div>
 
     <div id="section-three" class="d-flex flex-column justify-content-center align-items-center">
-      <h1>djflksdjf lkdjsflk sdklsdjf;s dkfhlshfls s</h1>
+      <h1>Responsive Redesign</h1>
 
+      <p>Using the final high-fidelity prototypes, create the page using HTML and CSS! Make sure you’ve thoroughly tested for responsiveness. Here are some things to try:
+Play with the size of your browser to see how the website looks on other computer screens
+Try changing the font size on your browser
+Use Developer Tools, e.g. the Chrome Responsive Tool or Firefox Responsive Design Mode to see how the website looks on other devices
+(optionally) Use Google Translate to see how your website looks on different languages
+Try WebAIM WAVE on different screen sizes to make sure that your website is still accessible on different devices
+ Write a few sentences or bullet points about your observations.
+</p>
       <div class="d-flex flex-row flex-wrap justify-content-around align-items-center">
-	<h1>hello hello hello</h1>
+	<h1></h1>
       </div>
     </div>    
 
 
-    <div id="section-four" class="d-flex flex-column justify-content-around align-items-around text-center">
-      <h1>jfl;adfla klds fjsl japsodi anflkdfmapo falkdjfal  alskjdlsakd </h1>
+    <!-- <div id="section-four" class="d-flex flex-column justify-content-around align-items-around text-center"> -->
+    <!--   <h1>Notes on Observations</h1> -->
       
-      <div class="d-flex flex-row justify-content-around align-items-around flex-wrap">
+    <!--   <div class="d-flex flex-row justify-content-around align-items-around flex-wrap"> -->
 
-      </div>
-    </div>
+    <!--   </div> -->
+    <!-- </div> -->
     
 
   </body>

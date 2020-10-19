@@ -1,5 +1,5 @@
 /* Put your style information here! */
-
+/* I picked the colors from this design: https://www.awwwards.com/sites/grosse-lanterne-1 */
 :root {
     --bg-color: #05386b;
     --bg-color-one: #5cdb95;
@@ -7,12 +7,20 @@
     --bg-color-three: #edf5e1; 
     --bg-color-four: #379683;
     --txt-color-primary: #05386b;
+    --padding-top: 6rem;
+    --padding-bottom: 4rem;
 }
 
 body {
-    padding-top: 50px; 
+    /* padding-top: 50px;  */
     background-color: var(--bg-color);
-    color: var(--txt-color-primary)
+    color: var(--txt-color-primary);
+    /* margin-left: 6rem; */
+    /* margin-right: 6rem; */
+}
+
+img {
+    box-shadow: 10px 10px 5px var(--bg-color-four);
 }
 
 #navbar {
@@ -20,34 +28,34 @@ body {
 }
 
 #intro {
-    padding-top: 100px; 
+    padding-top: var(--padding-top);
     background-color: var(--bg-color);
     color: var(--bg-color-one);
-    padding-bottom: 100px; 
+    /* padding-bottom: var(--padding-bottom);  */
 }
 
 #section-one {
-    padding-top: 100px; 
+    padding-top: var(--padding-top);  
     background-color: var(--bg-color-one);
-    padding-bottom: 100px; 
+    padding-bottom: var(--padding-bottom);
 }
 
 #section-two {
-    padding-top: 100px; 
+    padding-top: var(--padding-top); 
     background-color: var(--bg-color-two);
-    padding-bottom: 100px; 
+    padding-bottom: var(--padding-bottom); 
 }
 
 #section-three {
-    padding-top: 100px; 
+    padding-top: var(--padding-top); 
     background-color: var(--bg-color-three);
-    padding-bottom: 100px; 
+    padding-bottom: var(--padding-bottom); 
 }
 
 #section-four {
-    padding-top: 100px; 
+    padding-top: var(--padding-top); 
     background-color: var(--bg-color-four);
-    padding-bottom: 100px; 
+    padding-bottom: var(--padding-bottom); 
 }
 
 h1{
