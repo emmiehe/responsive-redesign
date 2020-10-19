@@ -1,0 +1,56 @@
+/* Put your style information here! */
+
+:root {
+    --bg-color: #05386b;
+    --bg-color-one: #5cdb95;
+    --bg-color-two: #8eefaf;
+    --bg-color-three: #edf5e1; 
+    --bg-color-four: #379683;
+    --txt-color-primary: #05386b;
+}
+
+body {
+    padding-top: 50px; 
+    background-color: var(--bg-color);
+    color: var(--txt-color-primary)
+}
+
+#navbar {
+    background-color: var(--bg-color);
+}
+
+#intro {
+    padding-top: 100px; 
+    background-color: var(--bg-color);
+    color: var(--bg-color-one);
+    padding-bottom: 100px; 
+}
+
+#section-one {
+    padding-top: 100px; 
+    background-color: var(--bg-color-one);
+    padding-bottom: 100px; 
+}
+
+#section-two {
+    padding-top: 100px; 
+    background-color: var(--bg-color-two);
+    padding-bottom: 100px; 
+}
+
+#section-three {
+    padding-top: 100px; 
+    background-color: var(--bg-color-three);
+    padding-bottom: 100px; 
+}
+
+#section-four {
+    padding-top: 100px; 
+    background-color: var(--bg-color-four);
+    padding-bottom: 100px; 
+}
+
+h1{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
