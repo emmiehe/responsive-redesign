@@ -59,6 +59,10 @@ img {
 }
 
 h1{
-    padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+p{
+    max-width: 30rem;
+    margin: 2rem;
 }
