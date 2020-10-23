@@ -1,11 +1,27 @@
 /* Put your style information here! */
 /* I picked the colors from this design: https://www.awwwards.com/sites/grosse-lanterne-1 */
+
+/* comfortaa-regular - latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/comfortaa-v29-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/comfortaa-v29-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/comfortaa-v29-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/comfortaa-v29-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/comfortaa-v29-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/comfortaa-v29-latin-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
+}
+
 :root {
     --bg-color: #05386b;
     --bg-color-one: #5cdb95;
     --bg-color-two: #8eefaf;
     --bg-color-three: #edf5e1; 
     --bg-color-four: #379683;
+    --txt-font-p: 'Comfortaa';
     --txt-color-primary: #05386b;
     --padding-top: 4rem;
     --padding-bottom: 4rem;
@@ -20,7 +36,7 @@ body {
 }
 
 img {
-    box-shadow: 10px 10px 5px var(--bg-color-four);
+    margin: 1rem;
 }
 
 #navbar {
@@ -62,7 +78,9 @@ h1{
     padding-bottom: 3rem;
 }
 
+h4, 
 p{
+    font-family: 'Comfortaa';
     max-width: 30rem;
-    margin: 2rem;
+    margin: 1.5rem;
 }

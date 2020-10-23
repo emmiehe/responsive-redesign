@@ -28,66 +28,235 @@
       </div>
     </nav>
 
-    <div id="intro" class="text-center">
+    <div id="intro" class="d-flex flex-row flex-wrap justify-content-center align-items-center text-center">
       <img src="./img/responsive-redesign-logo-hi.png" alt="Responsive Redesign Logo" style="width: 100%; box-shadow: 0 0 0 0;">
+      <h4>A friend of mine used to live in a place that did not have easy access to laundry machines. He talked about this great service called "SimpleWash". But he also complained that their website was "messy", especially when he needed to change his pickup or delivery time, it would take him a few minutes to find the place to correct those info from the website. 
+      </h4>
+      <h4>
+	As a student in a UI/UX CS class, I got curious about the website of SimpleWash laundry service. And I will talk about my discoveries and proposals after examining the their current homepage at simplewash.us. 
+      </h4>
     </div>
 
-    <div id="section-one" class="d-flex flex-column text-center justify-content-around align-items-around">
-      <h1>Identifying Usability Problems</h1>
-      <div class="d-flex flex-row justify-content-around align-items-center flex-wrap">
-	<img src="./img/simplewash-screencapture.png" alt="A screencapture of the homepage of simplewash.us" style="height: 100rem; max-width: 100%">
-	<!-- <p style="text-left">The website I picked was simplewash.us.</p> -->
-	<p class="text-left">In this part, you will be picking a one page of a website to analyze based on usability and accessibility standards. You will then redesign and build the redesigned version of this webpage.
-Picking a Website
-Pick a webpage that is publicly accessible without creating an account. Brown-specific sites like Banner and ASK are NOT publicly accessible. We recommend avoiding mass consumer websites with dedicated UI/UX designer(s), like Facebook or Twitter. Instead, choose an easier interface to improve, like websites for a local hospital, network router support, a custom-made restaurant ordering site, local government service, etc. Feel free to check your chosen interface with a TA. After you choose an interface to redesign, take a screenshot and link to it.
-Finding Problems
-Analyze the usability of the website using the criteria we learned about in class: usability, learnability, and memorability. Write about these problems, in the form of a list, table, infographic, or bullet points (depending on how you would like to present it in your portfolio!). It might be helpful to refer back to the Visual Design and Layout lectures.
-Accessibility
-In addition to analyzing the website on the four usability guidelines, use WebAIM WAVE to detect any possible accessibility concerns. Use a screen-reader to test how the website is interpreted by screen-readers. Write a few sentences about your findings.</p>
+    <div id="section-one" class="d-flex flex-column text-start justify-content-around align-items-center">
+      <h1 class="text-center">Identifying Usability Problems</h1>
+      <div class="d-flex flex-row justify-content-around align-items-start flex-wrap">
+	<div>
+	  <a href="https://www.simplewash.us"><h4 class="text-center">simplewash.us</h4></a>
+	  <img src="./img/simplewash-screencapture.png" alt="A screencapture of the homepage of simplewash.us" style="height: 80rem; max-width: 100%; box-shadow: 10px 10px 5px var(--bg-color-four);"/>
+	</div>
+<!-- Finding Problems -->
+<!-- Analyze the usability of the website using the criteria we learned about in class: usability, learnability, and memorability. Write about these problems, in the form of a list, table, infographic, or bullet points (depending on how you would like to present it in your portfolio!). It might be helpful to refer back to the Visual Design and Layout lectures. -->
+<!-- Accessibility -->
+	  <!-- In addition to analyzing the website on the four usability guidelines, use WebAIM WAVE to detect any possible accessibility concerns. Use a screen-reader to test how the website is interpreted by screen-readers. Write a few sentences about your findings.</p> -->
+	<div class="d-flex flex-column">
+
+	  <div class="container">
+	    <h4>Issue One: untamed images</h4>
+	    <p>When a user lands on the homepage of SimpleWash, the background image - a woman holding a "HELP" sign behind some half-folded clothes - effectively conveys the message that it is a laundry related service. While it is an impressive way to express how helpful this service could be, the high saturation of the image makes the texts and buttons floating on it very hard to read. In fact, a user could easily scroll over the most important function of this website - the "Schedule Now" button.</p>
+	    
+	    <h4>Issue Two: illegible texts</h4>
+	    <p>Besides too many high saturation images, the small font size and low text-background contrast make the texts almost illegible. This point is further verified by <a href="https://wave.webaim.org/report#/simplewash.us">WebAIM WAVE</a>: there are 27 contrast errors on the homepage. </p>
+	    
+	    <h4>Issue Three: redundant links</h4>
+	    <p>There are at least 4 different links that lead to the same scheduling page. On top of that, many blank links don't lead anywhere - it seems they should appear as texts instead of links (for example, "Eco-friendly" and "Donations gladly taken" look like links, but they are just texts).</p>
+
+	    <h4>Issue Four: overlapping content</h4>
+	    <p>The page has a fixed menu bar but its background is transparent, making the content of the page overlapping the menu bar when a user scrolls up. This creates a messy look visually, which I assume is not ideal for a laundry service.</p>
+	    
+	    <h4>Issue Five: unclear structure</h4>
+	    <p>The text and image grouping is not very meaningful. After scrolling over the entire page, the clearest message to me is "Share laundry day. Give & get $10!". All the other time I am bombarded with images and these images simply do not clearly depict the exact services of this business. This could potentially hurt the learnability of the website for first-time users like me.</p>
+
+	    <h4>Issue Six: lacking memorability</h4>
+	    <p>As my friend has pointed out, for casual users, it can be hard to remember where the "Change Delivery" button is (it is hiding under "Schedule") because the arrangement of functionalities is not intuitive.</p>
+	    
+	    <h4>Issue Seven: not as efficient</h4>
+	    <p>I guess that the original design adds redundant links to increase efficiency, but what's interesting is that not every section of the webpage can be reachable from somewhere else. For example, if an experienced user wants to "share and get $10", they know such functionality exists, but when they land on the page they will not find it at the menu bar. Instead, they will have to scroll over most of the sections to find it.</p>
+	    
+	  </div>
+
+	  <!-- <ul> -->
+	  <!--   <li>Low contrast and poor text hierarchy, background image saturation is too high and makes the whole webpage look messy, poor color harmony - use WebAIM WAVE</li> -->
+	  <!--   <li>Lack of a clear structure of each sections - for new user this can be confusing - poor grouping</li> -->
+	  <!--   <li>Overwhelming pictures - adding a little texture to text blocks and simplify images by using icons</li> -->
+	  <!--   <li>Redundent links - main functionality is not highlighted by layout but by repeated appearance</li> -->
+	  <!--   <li>Usability (for new users and casual users)</li> -->
+	  <!--   <li>Inefficiency</li> -->
+	  <!-- </ul> -->
+	  <!-- <div class="d-flex"> -->
+	  <!--   <img src="./img/simplewash-home.gif" alt="A GIF demo of the simplewash.us home page scrolling" style="height: 12rem; max-width: 100%"/> -->
+	  <!--   <p>The main function of this website "schedule now" is easily scrolled over, making it potentially confusing to users.</p> -->
+	  <!-- </div> -->
+	  <!-- <img src="./img/simplewash-about.gif" alt="A GIF demo of the simplewash.us about page scrolling - text overlapping"/> -->
+	</div>
       </div>
       
     </div>
 
     <div id="section-two" class="d-flex flex-column justify-content-center align-items-center">
       <h1>Visual Redesign</h1>
-      <p>Keep in mind that the screen needs to be responsive - that is, a different layout for mobile, tablet, and desktop. We recommend you split up the page into different grids and containers, so that you can easily use flexbox or grids for simple responsive development.</p>
       
-      <div class="text-center">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+	<div class="d-flex flex-row justify-content-center align-items-center">
 	<h2>Low-fidelity Wireframing</h2>
-	<p>Using a low-fidelity prototyping software (Balsamiq or Invision), create a total of 3 wireframes of your screen, one for each of the screen sizes (mobile, tablet, desktop). You will be submitting annotated wireframes in your handin. Annotations can simply be labels pointed to where they apply, but just make sure they are visually distinct so they aren't confused for part of the prototype itself. For each wireframe, consider the problems you described in part 1. Annotate where your wireframe solves those problems and describe how.</p>
+	<h4>My design idea is to follow the original one scrolling page structure, increase the simplicity of the webpage, change its text-hierarchy and color scheme, use box layout to communicate a better structure, and improve its efficiency. <br/> <br/>I will only be designing and implementing the home page of the website, which means "Schedule", "Reschedule", "Pricing", "FAQ" will be dummy buttons.</h4>
+	</div>
+	<div class="d-flex flex-row justify-content-center align-items-center flex-wrap">
+	  <div class="d-flex">
+	  <h4>Desktop Home</h4>
+	  <img src="./img/lofi/lo-home-lg.png" style="width:65rem;">
+	  </div>
+	  <div class="d-flex">
+	  <h4>Desktop Services</h4>
+	  <img src="./img/lofi/lo-services-lg.png" style="width:65rem;">
+	  </div>
+	  <div class="d-flex flex-wrap">
+	  <h4>Desktop Rest</h4>
+	  <img src="./img/lofi/why-us.png" style="width:15rem;">
+	  <img src="./img/lofi/special-requests.png" style="width:15rem;">
+	  <img src="./img/lofi/get-10.png" style="width:15rem;">
+	  <img src="./img/lofi/contact-us.png" style="width:15rem;">
+	  </div>
+	  <div class="d-flex">
+	  <h4>Tablet Home</h4>
+	  <img src="./img/lofi/lo-home-md.png" style="height: 40rem;">
+	  </div>
+	  <div class="d-flex">
+	  <h4>Tablet Services</h4>
+	  <img src="./img/lofi/lo-services-md.png" style="height: 28rem;">
+	  </div>
+	  <div class="d-flex">
+	  <h4>Tablet Rest</h4>
+	  <img src="./img/lofi/lo-why-us-md.png" style="width:6rem;">
+	  <img src="./img/lofi/lo-special-requests-md.png" style="width:6rem;">
+	  <img src="./img/lofi/lo-get-10-contact-us-md.png" style="width:6rem;">
+	  </div>
+	  <div class="d-flex">
+	  <h4>Phone Home</h4>
+	  <img src="./img/lofi/lo-home-sm.png" style="height: 35rem;">
+	  </div>
+	  <div class="d-flex">
+	  <h4>Phone Rest</h4>
+	  <img src="./img/lofi/lo-why-us-sm.png" style="width:10rem;">
+	  <img src="./img/lofi/lo-special-requests-sm.png" style="width:12rem;">
+	  <img src="./img/lofi/lo-get-10-sm.png" style="width:10rem;">
+	  <img src="./img/lofi/lo-contact-sm.png" style="width:10rem;">
+	  </div>
+	</div>
       </div>
-      
-      <div class="text-center">
-	<h2>High-Fidelity Prototyping</h2>
-	<p>Using a high-fidelity prototyping software (Figma or AdobeXD), create a total of 3 high-fidelity prototypes of your screen, one for each of the screen sizes (mobile, tablet, desktop). These should be based on the low-fidelity wireframes you created. 
 
-For each prototype, annotate the different elements so that an engineer would be able to take your designs and reproduce them without needing additional explanation. Annotate how your website would be responsive to handle the different screen sizes. Is it clear how the styling and/or structuring of each element  will change when you move from desktop to mobile to tablet? Here are some example questions to consider annotating:
-For larger containers, will you be using flexbox, grid, or something else? Why?
-Does the page change because of a user-action (such as a click or a hover)? How?
-	</p>
+
+      <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+	<div class="d-flex flex-row justify-content-center align-items-center">
+	<h2>High-Fidelity Prototyping</h2>
+	<h4>These Hi-Fi prototypes are based on the Lo-Fi wireframes. Please see comments and annotations below.</h4>
+	</div>
+	<div class="d-flex flex-row justify-content-center align-items-start flex-wrap">
+	  <div class="d-flex">
+	  <h4>Desktop</h4>
+	  <img src="./img/hifi/lg.jpg" style="width:35rem;">
+	  </div>
+	  <div class="d-flex flex-column justify-content-start">
+	  <h4>Tablet Home</h4>
+	  <img src="./img/hifi/md.jpg" style="width:20rem;">
+	  <h4>Phone Home</h4>
+	  <img src="./img/hifi/sm.jpg" style="width:10rem;">
+	  <h4>Some annotations and comments:
+	    <ul>
+	  <li>Navbar should be fixed on top to allow easy access to each section. </li>
+	  <li>Each section has its own div and the homepage (first section) and the contact page should have almost white background to have a clean look.</li>
+	  <li>Each section uses flexbox to handle responsiveness: for example, the "Services" section is one flex-column containing three flex-row, the second flex-row is reversed to make the grouping appear interesting.</li>
+	  <li>Majority of original webpage's images are replaced with simple icons to make it less distracting for a user to read.</li>
+	  <li>The "Help" background will show up on larger devices as a fixed background cover, but will not appear on medium to small devices.</li>
+	  <li>All forms use bootstrap form style with a btn-block submit button to allow easy clicking for users. Placeholders are not shown in the prototype but should follow the original page's place holder style to avoid confusion from existing customers.</li>
+	  </ul>
+	  </h4>
+	  </div>
+	  
+	</div>
       </div>
+
       
-      <div class="text-center">
+      <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+	<div class="d-flex flex-row justify-content-center align-items-center">
 	<h2>Visual Design Style Guide</h2>
-	<p>For any elements that change on events (e.g., on hover, on click), keeping their interactions consistent throughout a product keeps the user experience coherent. Clear documentation also makes handoffs to developers easier. Here is an example. Create a visual design style guide that displays the main colors, typography, and reusable components’ different states (buttons on hover, click, etc.). We expect to see all major components included in your style guide, but how many components this totals to will vary based on your design choices. Focus on interactive elements like input fields over colors and fonts. 
-	</p>
-      </div>	
+	<h4>Here are some elements that I include in my redesign.</h4>
+	</div>
+	<div class="d-flex flex-row justify-content-center align-items-start flex-wrap">
+
+	  <div class="d-flex flex-column flex-wrap justify-content-center">
+	    <p>Font Family:</p><p>header uses "El Messiri"; <br>content uses "Open Sans"</p>
+	    <img src="./img/visual/font.png" style="height: 10rem;">
+	  </div>
+
+	  
+	  <div class="d-flex flex-column flex-wrap justify-content-center">
+	    <p>Color: </p>
+	     <p>Background-green: #f6fff8
+              <br>Background-white: #fefffe
+	       <br> Background-navbar: #cce3de
+	    <br>Text-color: #256A66
+	    <br>Link-color: #000000</p> 
+	    
+	  </div>
+
+	  
+	  <div class="d-flex flex-column flex-wrap justify-content-center">
+	    <p>Button:</p>
+	    <img src="./img/visual/button.png" style="height: 5rem;">
+	  </div>
+
+	  <div class="d-flex flex-column flex-wrap justify-content-center">
+	    <p>Link:</p>
+	    <img src="./img/visual/link.png" style="height: 5rem;">
+	  </div>
+
+	  <div class="d-flex flex-column flex-wrap justify-content-center">
+	    <p>Input:</p>
+	    <img src="./img/visual/input.png" style="height: 5rem;">
+	  </div>
+	  <div class="d-flex flex-column flex-wrap justify-content-center">
+	    <p>Icon/Image:</p>
+	    <img src="./img/visual/image.png" style="height:8rem;">
+	  </div>
+	  <div class="d-flex flex-column flex-wrap justify-content-center">
+	    <p>Form:</p>
+	    <img src="./img/visual/form.png" style="height: 10rem;">
+	  </div>
+	  <div class="d-flex flex-column flex-wrap justify-content-center">
+	    <p>Interacting with form:</p>
+	    <img src="./img/visual/clicking.png" style="height:10rem;">
+	  </div>
+	  <div class="d-flex flex-column flex-wrap justify-content-center">
+	    <p>Typing in form:</p>
+	    <img src="./img/visual/inputing.png" style="height:10rem;">
+	  </div>
+	  
+	</div>
+      </div>
+
+<!-- For each prototype, annotate the different elements so that an engineer would be able to take your designs and reproduce them without needing additional explanation. Annotate how your website would be responsive to handle the different screen sizes. Is it clear how the styling and/or structuring of each element  will change when you move from desktop to mobile to tablet? Here are some example questions to consider annotating: -->
+<!-- For larger containers, will you be using flexbox, grid, or something else? Why? -->
+<!-- Does the page change because of a user-action (such as a click or a hover)? How? -->
+<!-- 	</p> -->
+<!--       </div> -->
+      
+<!--       <div class="text-center"> -->
+<!-- 	<h2>Visual Design Style Guide</h2> -->
+<!-- 	<p>For any elements that change on events (e.g., on hover, on click), keeping their interactions consistent throughout a product keeps the user experience coherent. Clear documentation also makes handoffs to developers easier. Here is an example. Create a visual design style guide that displays the main colors, typography, and reusable components’ different states (buttons on hover, click, etc.). We expect to see all major components included in your style guide, but how many components this totals to will vary based on your design choices. Focus on interactive elements like input fields over colors and fonts.  -->
+<!-- 	</p> -->
+<!--       </div>	 -->
     </div>
 
     <div id="section-three" class="d-flex flex-column text-center justify-content-center align-items-center">
       <h1>Responsive Redesign</h1>
 
-      <p>Using the final high-fidelity prototypes, create the page using HTML and CSS! Make sure you’ve thoroughly tested for responsiveness. Here are some things to try:
-Play with the size of your browser to see how the website looks on other computer screens
-Try changing the font size on your browser
-Use Developer Tools, e.g. the Chrome Responsive Tool or Firefox Responsive Design Mode to see how the website looks on other devices
-(optionally) Use Google Translate to see how your website looks on different languages
-Try WebAIM WAVE on different screen sizes to make sure that your website is still accessible on different devices
- Write a few sentences or bullet points about your observations.
-</p>
-      <div class="d-flex flex-row flex-wrap justify-content-around align-items-center">
-	<h1></h1>
-      </div>
+      <h4>
+	With the lo-fi wireframe and hi-fi prototype, I recreated this responsive homepage <a href="https://intense-mountain-18062.herokuapp.com/">here</a>
+      </h4>
+      <p>Some thoughts: it is often easy to claim that a website is badly designed without pinpointing the exact issues and providing solutions to those issues. While I certainly have had fun redesigning the homepage of SimpleWash, I have also realized how much work there is to design, prototype, and implement even a simple webpage.  </p>
+      <!-- <div class="d-flex flex-row flex-wrap justify-content-around align-items-center"> -->
+      <!-- 	<h1></h1> -->
+      <!-- </div> -->
     </div>    
 
 
