@@ -23,8 +23,8 @@
     --bg-color-four: #379683;
     --txt-font-p: 'Comfortaa';
     --txt-color-primary: #05386b;
-    --padding-top: 4rem;
-    --padding-bottom: 4rem;
+    --padding-top: 6vh;
+    --padding-bottom: 4vh;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
 }
 
 img {
-    margin: 1rem;
+    margin: 1vh;
 }
 
 #navbar {
@@ -75,12 +75,13 @@ img {
 }
 
 h1{
-    padding-bottom: 3rem;
+    padding-bottom: 3vh;
 }
 
-h4, 
+h4,
+h5,
 p{
     font-family: 'Comfortaa';
-    max-width: 30rem;
-    margin: 1.5rem;
+    max-width: 60vh;
+    margin: 1vh;
 }
